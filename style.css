@@ -1,0 +1,155 @@
+
+/*comentario*/
+/* propiedad:valor */
+
+
+/*
+#252525 negro
+#FF0000 rojo
+#EFEFEF blanco
+*/
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+ }
+
+/* Seccion index*/
+body{
+    background-color:#ffffff
+}
+footer{
+    background-color: #003087;
+    color:#fff;
+    text-align: center;
+padding: 20px;
+font-family: Arial, Helvetica, sans-serif;
+}
+/*logos*/
+
+.logowp{    
+position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: #25d366;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0,0,0,3);
+}
+.logo{
+ 
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+
+    object-fit: cover;
+
+}
+
+
+
+h2{
+    margin: 6px;
+  text-align: justify;
+  color: #000000;
+}
+.tiguan-img{
+    width: 95%;
+    height: auto;
+
+margin: 20px;
+}
+/*Grid index*/
+.contenedor-grid{
+
+   display: grid; 
+   grid-template-areas: 
+   "titulo titulo"
+   "casa1 casa2"
+   "texto1 texto2";
+   grid-template-columns:  50% 50%;
+   grid-template-rows: 150px 200px 180px;
+   justify-content: center;
+ justify-items: center;
+ align-items: center;
+  padding: 10px;
+}
+.contenedor-grid img{
+    width: 100%;
+    height: 400px;
+  padding-top: 60px;
+}
+
+
+.titulo-index{
+    text-decoration: underline;
+    color: #003087;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 5px;
+    grid-area: titulo;
+
+}
+.texto-index{
+    font-size: 30px;
+    color: #003087;
+    font-weight:700;
+  padding-top: 70px;
+    grid-area: texto1;
+}
+.segundo-texto{
+    font-size: 30px;
+    color: #003087;
+    font-weight:700;
+    padding-top: 20px;
+    grid-area: texto2;
+}
+.primer-imagen{
+    padding: 10px;
+    grid-area: casa1;
+}
+.segunda-imagen{
+    padding: 20px;
+   grid-area: casa2; 
+}
+
+
+
+/*banner*/
+
+.banner{
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 20px;
+    overflow: hidden;
+
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.texto-banner{
+position: absolute;
+top: 25%;
+left: 30%;
+
+background-color: rgba(255, 255, 255, 0.40);
+padding: 15px 25px;
+border-radius: 8px;
+color: #003087;
+box-shadow: 0 4px 15px rgba(0, 0, 0,0.2);
+
+}
+
+
+
+/*nav boostrap*/
+.color-backgr{
+    background-color: #003087;
+}
