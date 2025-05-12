@@ -1,19 +1,7 @@
-
-/*comentario*/
-/* propiedad:valor */
-
-
-/*
-#252525 negro
-#FF0000 rojo
-#EFEFEF blanco
-*/
-
 *{
     margin: 0%;
     padding: 0%;
-    box-sizing: border-box;
- }
+    box-sizing: border-box; }
 
 /* Seccion                                                                                                    index*/
 body{
@@ -27,7 +15,7 @@ padding: 20px;
 font-family: Arial, Helvetica, sans-serif;
 }
 header{
-    background-color:#003087
+    background-color:#003087;
     display: flex;
     flex-direction: row;
     justify-content: space;
@@ -46,7 +34,7 @@ position: fixed;
     box-shadow: 0 4px 8px rgba(0, 0,0,0,3);
 }
 .logo{
- 
+
     border-radius: 50%;
     border: 2px solid white;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
@@ -68,11 +56,10 @@ padding-top: 20px;
     border-radius: 10px;
 }
 
-
 h2{
     margin: 6px;
-  text-align: justify;
-  color: #000000;
+    text-align: justify;
+    color: #000000;
 }
 .tiguan-img{
     width: 95%;
@@ -82,22 +69,22 @@ h2{
 /*Grid index*/
 .contenedor-grid{
 
-   display: grid; 
-   grid-template-areas: 
-   "titulo titulo"
-   "casa1 casa2"
-   "texto1 texto2";
-   grid-template-columns:  50% 50%;
-   grid-template-rows: 150px 200px 180px;
-   justify-content: center;
- justify-items: center;
- align-items: center;
-  padding: 10px;
+    display: grid; 
+    grid-template-areas: 
+    "titulo titulo"
+    "casa1 casa2"
+    "texto1 texto2";
+    grid-template-columns:  50% 50%;
+    grid-template-rows: 150px 200px 180px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
 }
 .contenedor-grid img{
     width: 100%;
     height: 400px;
-  padding-top: 60px;
+    padding-top: 60px;
 }
 
 
@@ -114,7 +101,7 @@ h2{
     font-size: 30px;
     color: #003087;
     font-weight:700;
-  padding-top: 70px;
+    padding-top: 70px;
     grid-area: texto1;
 }
 .segundo-texto{
@@ -130,7 +117,7 @@ h2{
 }
 .segunda-imagen{
     padding: 20px;
-   grid-area: casa2; 
+    grid-area: casa2; 
 }
 
 
@@ -138,13 +125,11 @@ h2{
 /*banner*/
 
 .banner{
+    
+    position: static;
     width: 90%;
     height: 300px;
     margin: auto;
-    padding-top: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 20px;
     overflow: hidden;
 
 }
@@ -153,40 +138,53 @@ h2{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    
 }
+
 .texto-banner{
-position: absolute;
-top: 15%;
-left: 30%;
-
-background-color: rgba(255, 255, 255, 0.40);
-padding: 15px 25px;
-border-radius: 8px;
-color: #003087;
-box-shadow: 0 4px 15px rgba(0, 0, 0,0.2);
+    white-space: nowrap;
+    position: relative;
+    object-fit: cover;
+    top: 32%;
+    left: 20%;
+    padding: 15px 25px;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    z-index: 2;
 
 }
-
-
 
 /*nav boostrap*/
 .color-backgr{
     background-color: #003087;
-    position: absolute;
+    position: fi;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 999;
 }
+/*         navegador*/
+navbar{
+    position: fixed;
+top: 0;
+left: 0;
+width: 100%; 
+background: #fff;
+z-index: 1000;
+padding: 15px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 
+}
 
 
 
 /*SECCION                                                                                                  COMPRAR*/
 h1{
-    color: #003087;
+    color: red;
     text-align: center;
-    padding-top: 16px;
+    padding: 30px;
     text-decoration: underline;
 }
 
@@ -206,16 +204,17 @@ h1{
 }
 .texto-polo{
     position: absolute;
-    top: 90%;
+    top: 110%;
     left: 8%;
     padding-top: 120px;
     color: #003087;
 
 }
 .parrafo-polo{
+
     font-size: 22px;
     position: absolute;
-    top: 98%;
+    top: 115%;
     left: 1%;
     padding-top: 120px;
     color: rgb(255, 255, 255);
@@ -228,28 +227,28 @@ h1{
 .parrafo-segundo{
     font-size: 17px;
     position: absolute;
-    top: 10%;
+    top: 15%;
     left: 1%;
     padding-top: 120px;
-    color: rgb(0, 0, 0);  
+    color: rgb(255, 0, 0);  
 
 }
 
 .parrafo-tres{
     font-size: 16px;
     position: absolute;
-    top: 15%;
+    top: 20%;
     left: 1%;
     padding-top: 120px;
-    color: rgb(0, 0, 0);  
+    color: rgb(255, 0, 0);  
 }
 .parrafo-cuatro{
     font-size: 17px;
     position: absolute;
-    top: 20%;
+    top: 25%;
     left: 1%;
     padding-top: 120px;
-    color: rgb(0, 0, 0);  
+    color: rgb(255, 0, 0);  
 }
 
 .banner-tcross{
@@ -270,7 +269,7 @@ h1{
 
 .texto-tcross{
     position: absolute;
-    top: 140%;
+    top: 155%;
     left: 50%;
     padding-top: 120px;
     color: #003087;
@@ -279,7 +278,7 @@ h1{
     text-align: justify;
     font-size: 20px;
     position: absolute;
-    top: 150%;
+    top: 160%;
     left: 1%;
     padding-top: 120px;
     color: #000000;
@@ -288,8 +287,8 @@ h1{
 .parrafo-2cross{
     font-size: 21px;
     position: absolute;
-    top: 175%;
-    left: 86%;
+    top: 183%;
+    left: 40%;
     font-weight: 700;
     padding-top: 120px;
     color: rgb(255, 255, 255);
@@ -298,8 +297,8 @@ h1{
     text-align: center;
     font-size: 21px;
     position: absolute;
-    top: 180%;
-    left: 86%;
+    top: 187%;
+    left: 40%;
     font-weight: 700;
     padding-top: 120px;
     color: rgb(255, 255, 255);
@@ -308,8 +307,8 @@ h1{
     text-align: center;
     font-size: 21px;
     position: absolute;
-    top: 185%;
-    left: 85%;
+    top: 191%;
+    left: 40%;
     font-weight: 700;
     padding-top: 120px;
     color: rgb(255, 255, 255)
@@ -335,7 +334,7 @@ h1{
 }
 .texto-taos{
     position: absolute;
-    top: 275%;
+    top: 290%;
     left: 10%;
     padding-top: 120px;
     color: #003087;
@@ -345,7 +344,7 @@ h1{
     text-align: justify;
     font-size: 20px;
     position: absolute;
-    top: 282%;
+    top: 298%;
     left: 1%;
     padding-top: 120px;
     color: #000000;
@@ -355,30 +354,31 @@ h1{
 .parrafo-sgdo{
     font-size: 21px;
     position: absolute;
-    top: 340%;
-    left: 88%;
+    top: 309%;
+    left: 54%;
     font-weight: 700;
     padding-top: 120px;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
 }
 .parrafo-tercer{
     font-size: 21px;
     position: absolute;
-    top: 345%;
-    left: 88%;
+    top: 312%;
+    left: 55%;
     font-weight: 700;
     padding-top: 120px;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
 
 }
 .parrafo-cuarto{
     font-size: 21px;
     position: absolute;
-    top: 354%;
-    left: 88%;
+    top: 315%;
+    left: 52%;
     font-weight: 700;
     padding-top: 120px;
-    color: rgb(255, 255, 255);   
+    color: rgb(255, 0, 0);   
+    
 }
 
 .cierre-comprar{
@@ -412,8 +412,7 @@ align-content: center;
 .grid-taller img{
     width: 100%;
     height: 300px;
-    padding-bottom: ;
-  
+
 }
 .titulo-taller{
     grid-area: titulo;
@@ -490,7 +489,7 @@ color: #000000;
     "casa4 texto4"
     "casa5 subtitulo5"
     "casa5 texto5";
-    grid-template-columns:  45% 45%;
+    grid-template-columns:  60% 40%;
     grid-template-rows: repeat(15px);
     justify-content: center;
     align-items: center;
@@ -518,7 +517,7 @@ color: #000000;
     color: #003087;
 }
 .subt-cont{
-    grid-area: subtitulo2
+    grid-area: subtitulo2;
     padding-top: 60px;
 }
 .p-cont{
@@ -578,15 +577,15 @@ color: #000000;
 
 /*Seccion                                                                       Contacto*/
 .ubicacion-c{
-    argin-top: 30px;
+    margin-top: 30px;
     border-radius:5px ;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1) ; 
 }
 .info-contacto{
- padding: 2px;
- margin: 2px;
- font-size: 20px;  
+    padding: 2px;
+    margin: 2px;
+    font-size: 20px;  
 }
 .titulo-cont{
     margin: 0;
@@ -599,7 +598,7 @@ color: #000000;
     padding: 10px;
     text-align: center;
     color: #003087;
- }
+}
 
 /* Responsive */
 /*mobile*/
@@ -607,6 +606,8 @@ color: #000000;
 @media (max-width: 480px)
 {
 
+
+    
 /* seccion                                index*/
 
     header img{
@@ -631,6 +632,9 @@ h1{
 padding-right: 18px;
 }
 
+.logowp{
+    position: fixed;
+}
 .contenedor-grid img {
     width: 100%;
     height: 400px;
@@ -778,19 +782,7 @@ h1{
     width: 100%;
 }
 
-.texto-banner{
-    position: absolute;
-    top: 20%;
-    left: 5%;
-    background-color: rgba(255, 255, 255,0.4);
-    padding: 5px 10px;
-    color: #003087;
-    display: inline-block;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    
-    
-}
+
 banner img{
     width: 100%;
 }
@@ -804,4 +796,3 @@ banner img{
     
 }
 }
-
