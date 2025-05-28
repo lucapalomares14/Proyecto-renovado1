@@ -1,8 +1,673 @@
-/*Comentario css*/
+/* variables*/
+/*contenido general*/
 body {
   background-color: #ffffff;
 }
 
+footer {
+  background-color: #003087;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: #003087;
+  display: flex;
+  flex-direction: row;
+  justify-content: space;
+  position: sticky;
+  top: 0%;
+}
+
+.mi-navbar {
+  background: linear-gradient(90deg, #00264d, #004a99);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  width: 100%;
+}
+.mi-navbar .navbar-brand {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #fff;
+}
+.mi-navbar .nav-link {
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 0.375rem;
+  padding: 6px 14px;
+  margin: 0 6px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  border-color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.mi-navbar .nav-link:hover {
+  border-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+}
+
+/*logos*/
+.logowp {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background-color: #25d366;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  object-fit: cover;
+}
+
 /*seccion index*/
+.banner {
+  background-image: url(../medios/banner.jpg);
+  background-size: cover;
+  color: #fff;
+  padding: 0 10px;
+  text-align: center;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner .texto-banner {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.contenedor-grid {
+  display: grid;
+  grid-template-areas: "titulo titulo" "casa1 casa2" "texto1 texto2";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 150px 200px 180px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.contenedor-grid img {
+  width: 100%;
+  height: 400px;
+  padding-top: 60px;
+}
+
+.texto-index {
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #003087;
+  text-align: center;
+  padding-top: 60px;
+  grid: texto1;
+}
+
+.titulo-index {
+  text-decoration: underline;
+  color: #000000;
+  font-size: 28px;
+  font-weight: 700;
+  padding: 5px;
+  grid-area: titulo;
+}
+
+.segundo-texto {
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #003087;
+  text-align: center;
+  padding-top: 60px;
+  grid-area: texto2;
+}
+
+.primer-imagen {
+  padding: 10px;
+  grid-area: casa1;
+}
+
+.segunda-imagen {
+  padding: 20px;
+  grid-area: casa2;
+}
+
+main h2 {
+  margin: 6px;
+  text-align: justify;
+  color: #000000;
+}
+main .tiguan-img {
+  width: 95%;
+  height: auto;
+  margin: 20px;
+}
+
+.ultima-seccion {
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+.ultima-seccion .boton-comprar {
+  background-color: #000000;
+  color: white;
+  padding: 10px 25px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+/* seccion comprar*/
+.presentacion-comprar .titulo-comprar {
+  margin-top: 10px;
+  color: #000;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.Banner-vento {
+  background-image: url(../medios/banner-vento.webp);
+  background-size: cover;
+  color: #000000;
+  padding: 0 10px;
+  text-align: center;
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+}
+.Banner-vento .ficha-vento {
+  background-color: rgba(10, 10, 10, 0.9);
+  color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  margin-left: 50px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.Banner-vento .texto-vento {
+  background-color: #0033a0;
+  color: white;
+  display: inline-block;
+  padding: 5px 15px;
+  margin-top: 0 auto 10px auto;
+  border-radius: 6px;
+  font-size: 22px;
+}
+.Banner-vento ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+.Banner-vento li {
+  margin-bottom: 5px;
+}
+.Banner-vento .descripcion-vento {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.banner-tiguan {
+  background-image: url(../medios/tiguan.webp);
+  background-size: cover;
+  color: #000000;
+  padding: 0 10px;
+  text-align: center;
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+}
+.banner-tiguan .ficha-tiguan {
+  background-color: rgba(10, 10, 10, 0.9);
+  color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  margin-left: 50px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.banner-tiguan .texto-tiguan {
+  background-color: #0033a0;
+  color: white;
+  display: inline-block;
+  padding: 5px 15px;
+  margin-top: 0 auto 10px auto;
+  border-radius: 6px;
+  font-size: 22px;
+}
+.banner-tiguan ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+.banner-tiguan li {
+  margin-bottom: 5px;
+}
+.banner-tiguan .descripcion-tiguan {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.banner-amarok {
+  background-image: url(../medios/amarokk.webp);
+  background-size: cover;
+  color: #000000;
+  padding: 0 10px;
+  text-align: center;
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+}
+.banner-amarok .ficha-amarok {
+  background-color: rgba(10, 10, 10, 0.9);
+  color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  margin-left: 50px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.banner-amarok .texto-amarok {
+  background-color: #0033a0;
+  color: white;
+  display: inline-block;
+  padding: 5px 15px;
+  margin-top: 0 auto 10px auto;
+  border-radius: 6px;
+  font-size: 22px;
+}
+.banner-amarok ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+.banner-amarok li {
+  margin-bottom: 5px;
+}
+.banner-amarok .descripcion-amarok {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.cierre-comprar {
+  margin: 6px;
+  text-align: center;
+  color: #003087;
+}
+
+/*seccion taller*/
+.presentacion .titulo-tallerr {
+  margin-top: 30px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-bottom: 20px;
+}
+.presentacion .img-presenta {
+  width: 100%;
+  height: 700px;
+  border-radius: 10px;
+  padding: 0 10 0 20;
+}
+
+.grid-taller {
+  display: grid;
+  grid-template-areas: "titulo titulo titulo" "casa1 casa2 casa3" "texto1 texto2 texto3";
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 250px 300px 100px;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+}
+.grid-taller .titulo-taller {
+  grid-area: titulo;
+  padding-top: 40px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #003087;
+}
+.grid-taller .texto-taller {
+  grid-area: texto1;
+  padding: 2px;
+  color: #003087;
+}
+.grid-taller .segundot-taller {
+  grid-area: texto2;
+  padding: 2px;
+  color: #003087;
+}
+.grid-taller .tercert-taller {
+  grid-area: texto3;
+  padding: 2px;
+  color: #003087;
+}
+.grid-taller .imagen-taller {
+  grid-area: casa1;
+  padding: 5px;
+  width: 100%;
+  height: 300px;
+}
+.grid-taller .segundai-taller {
+  grid-area: casa2;
+  padding: 5px;
+  width: 100%;
+  height: 300px;
+}
+.grid-taller .terceri-taller {
+  grid-area: casa3;
+  width: 100%;
+  height: 300px;
+}
+
+.ultimos-serv {
+  text-align: center;
+}
+.ultimos-serv .texto-repuestos {
+  color: #003087;
+  font-size: 20px;
+  padding: 10px;
+}
+.ultimos-serv .imagen-tt {
+  width: 100%;
+  height: auto;
+}
+.ultimos-serv .imagenfinal-t {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.final-taller {
+  margin: 6px;
+  text-align: center;
+  color: #003087;
+}
+.final-taller .h3-final {
+  text-decoration: underline;
+  color: #000000;
+}
+
+/*servicios especiales*/
+.grid-servicios {
+  display: grid;
+  grid-template-areas: "titulo titulo" "casa1 subtitulo1" "casa1 texto1" "casa2 subtitulo2" "casa2 texto2 " "casa3 subtitulo3" "casa3 texto3" "casa4 subtitulo4" "casa4 texto4" "casa5 subtitulo5" "casa5 texto5";
+  grid-template-columns: 70% 25%;
+  grid-template-rows: 100px, repeat(10, 300px);
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  margin-top: 10px;
+}
+.grid-servicios .titulo-serv {
+  grid-area: titulo;
+  color: #003087;
+  text-align: center;
+}
+.grid-servicios .subt-serv {
+  grid-area: subtitulo1;
+  padding-top: 70%;
+  padding-left: 5%;
+}
+.grid-servicios .p-serv {
+  grid-area: texto1;
+  padding-bottom: 50%;
+  font-size: 20px;
+  color: #003087;
+}
+.grid-servicios .subt-cont {
+  grid-area: subtitulo2;
+}
+.grid-servicios .p-cont {
+  grid-area: texto2;
+  padding-bottom: 20%;
+  font-size: 20px;
+  color: #003087;
+}
+.grid-servicios .subt-asis {
+  grid-area: subtitulo3;
+}
+.grid-servicios .p-asis {
+  grid-area: texto3;
+  padding-bottom: 60%;
+  padding-left: 5%;
+  font-size: 20px;
+  color: #003087;
+}
+.grid-servicios .subt-ventas {
+  grid-area: subtitulo4;
+  padding-top: 60px;
+}
+.grid-servicios .p-ventas {
+  grid-area: texto4;
+  font-size: 20px;
+  color: #003087;
+}
+.grid-servicios .subt-check {
+  grid-area: subtitulo5;
+}
+.grid-servicios .p-check {
+  grid-area: texto5;
+  font-size: 20px;
+  color: #003087;
+}
+.grid-servicios .grid-servicios img {
+  padding: 20px 20px 20px 20px 20px;
+}
+.grid-servicios .img-exp {
+  grid-area: casa1;
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+  padding: 20px;
+}
+.grid-servicios .img-mant {
+  grid-area: casa2;
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+  padding: 20px;
+}
+.grid-servicios .img-asis {
+  grid-area: casa3;
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+  padding: 20px;
+}
+.grid-servicios .img-entrega {
+  grid-area: casa4;
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+  padding: 20px;
+}
+.grid-servicios .img-check {
+  grid-area: casa5;
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+  padding: 20px;
+}
+
+/*seccion contacto*/
+.info-contacto {
+  padding: 2px;
+  margin: 2px;
+  font-size: 20px;
+}
+.info-contacto .texto-contacto {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 30px;
+  text-decoration: underline;
+  margin-top: 20px;
+}
+.info-contacto .parrafo-contacto {
+  color: red;
+  text-align: center;
+  font-size: 25px;
+}
+.info-contacto .titulo-cont {
+  margin: 0;
+  padding: 1px;
+  padding-bottom: 10px;
+  color: #003087;
+  text-decoration: underline;
+}
+
+.ubicacion-c {
+  margin-top: 30px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.respondemos {
+  padding: 10px;
+  text-align: center;
+  color: #003087;
+}
+
+/* Responsive */
+/*mobile*/
+@media (max-widht: 480px) {
+  /* seccion                                index*/
+  header img {
+    width: 50px;
+    height: 50px;
+  }
+  nav {
+    width: 100%;
+  }
+  main {
+    text-align: center;
+    align-items: center;
+  }
+  h1 {
+    font-size: 9px;
+    font-weight: 900;
+    padding-right: 18px;
+  }
+  .logowp {
+    position: fixed;
+  }
+  .contenedor-grid img {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 40px;
+  }
+  .contenedor-grid .titulo-index {
+    font-size: 25px;
+    margin-bottom: 60px;
+  }
+  .contenedor-grid .segundo-texto {
+    font-size: 25px;
+  }
+  .contenedor-grid .primer-imagen {
+    width: 180px;
+  }
+  .contenedor-grid .segunda-imagen {
+    width: 200px;
+  }
+  .ante-ultimo .subt-index {
+    font-size: 25px;
+    text-align: center;
+  }
+  .ante-ultimo .tiguan-img {
+    width: 90%;
+  }
+  .ultima-seccion .ultimo-h {
+    font-size: 20px;
+    color: #003087;
+  }
+  .ultima-seccion .ultimo-p {
+    font-size: 14px;
+  }
+  /*seccion                                                                    comprar*/
+  .presentacion-comprar .titulo-comprar {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .titulo-comprar {
+    font-size: 22px;
+    text-align: center;
+  }
+  .Banner-vento,
+  .banner-tiguan,
+  .banner-amarok {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 600px;
+    padding: 20px 10px 40px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .ficha-vento,
+  .ficha-tiguan,
+  .ficha-amarok {
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+    font-size: 12px;
+    background-color: rgba(10, 10, 10, 0.9);
+    color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    font-size: 13px;
+  }
+  .texto-vento,
+  .texto-tiguan,
+  .texto-amarok {
+    background-color: #0033a0;
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  ul li {
+    margin-bottom: 5px;
+  }
+  .descripcion-vento,
+  .descripcion-tiguan,
+  .descripcion-amarok {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+}
 
 /*# sourceMappingURL=estilos.css.map */
